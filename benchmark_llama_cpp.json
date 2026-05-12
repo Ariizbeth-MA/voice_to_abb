@@ -1,0 +1,167 @@
+{
+  "whisper_model": "small",
+  "backends": [
+    {
+      "backend": "Ollama",
+      "precision": 0.625,
+      "t_whisper_avg": 1.313,
+      "t_llm_avg": 9.078,
+      "t_total_avg": 16.937,
+      "ciclos": [
+        {
+          "esperado": "move_home",
+          "transcrito": "¡Ve a home!",
+          "detectado": "move_home",
+          "correcto": true,
+          "t_whisper": 1.419,
+          "t_llm": 26.82,
+          "t_total": 32.075
+        },
+        {
+          "esperado": "move_joint",
+          "transcrito": "mueve el joint 1 a 45 grados",
+          "detectado": "move_joint",
+          "correcto": true,
+          "t_whisper": 1.358,
+          "t_llm": 6.371,
+          "t_total": 18.392
+        },
+        {
+          "esperado": "move_joint",
+          "transcrito": "mueve el join 3 a 90 grados",
+          "detectado": "move_joint",
+          "correcto": true,
+          "t_whisper": 1.244,
+          "t_llm": 6.367,
+          "t_total": 21.177
+        },
+        {
+          "esperado": "open_gripper",
+          "transcrito": "¡Abre el gripe!",
+          "detectado": "open_gripper",
+          "correcto": true,
+          "t_whisper": 1.31,
+          "t_llm": 4.648,
+          "t_total": 10.481
+        },
+        {
+          "esperado": "close_gripper",
+          "transcrito": "Tierra el griper.",
+          "detectado": "open_gripper",
+          "correcto": false,
+          "t_whisper": 1.337,
+          "t_llm": 4.515,
+          "t_total": 10.028
+        },
+        {
+          "esperado": "stop",
+          "transcrito": "para",
+          "detectado": "",
+          "correcto": false,
+          "t_whisper": 1.326,
+          "t_llm": 7.816,
+          "t_total": 14.6
+        },
+        {
+          "esperado": "move_cartesian",
+          "transcrito": "mueve 10 centímetros en X",
+          "detectado": "move_cartesian",
+          "correcto": true,
+          "t_whisper": 1.264,
+          "t_llm": 8.521,
+          "t_total": 14.815
+        },
+        {
+          "esperado": "rotate_joint",
+          "transcrito": "rota el joint 230 grados",
+          "detectado": "",
+          "correcto": false,
+          "t_whisper": 1.246,
+          "t_llm": 7.563,
+          "t_total": 13.925
+        }
+      ]
+    },
+    {
+      "backend": "llama.cpp",
+      "precision": 0.75,
+      "t_whisper_avg": 1.636,
+      "t_llm_avg": 6.669,
+      "t_total_avg": 19.2,
+      "ciclos": [
+        {
+          "esperado": "move_home",
+          "transcrito": "¡Ve a homo!",
+          "detectado": "move_home",
+          "correcto": true,
+          "t_whisper": 4.099,
+          "t_llm": 12.628,
+          "t_total": 31.829
+        },
+        {
+          "esperado": "move_joint",
+          "transcrito": "mueve el joint 1 a 45 grados",
+          "detectado": "move_joint",
+          "correcto": true,
+          "t_whisper": 1.262,
+          "t_llm": 6.005,
+          "t_total": 22.286
+        },
+        {
+          "esperado": "move_joint",
+          "transcrito": "mueve el joint 3 a 90 grados",
+          "detectado": "move_joint",
+          "correcto": true,
+          "t_whisper": 1.376,
+          "t_llm": 5.899,
+          "t_total": 22.376
+        },
+        {
+          "esperado": "open_gripper",
+          "transcrito": "Abre el griper",
+          "detectado": "open_gripper",
+          "correcto": true,
+          "t_whisper": 1.224,
+          "t_llm": 4.706,
+          "t_total": 21.032
+        },
+        {
+          "esperado": "close_gripper",
+          "transcrito": "Cierra el griper",
+          "detectado": "close_gripper",
+          "correcto": true,
+          "t_whisper": 1.397,
+          "t_llm": 4.871,
+          "t_total": 18.381
+        },
+        {
+          "esperado": "stop",
+          "transcrito": "para.",
+          "detectado": "move_cartesian",
+          "correcto": false,
+          "t_whisper": 1.137,
+          "t_llm": 6.574,
+          "t_total": 11.378
+        },
+        {
+          "esperado": "move_cartesian",
+          "transcrito": "Muévete 10 centímetros en X.",
+          "detectado": "move_cartesian",
+          "correcto": true,
+          "t_whisper": 1.338,
+          "t_llm": 6.721,
+          "t_total": 13.18
+        },
+        {
+          "esperado": "rotate_joint",
+          "transcrito": "rota el yen 230 grados",
+          "detectado": "",
+          "correcto": false,
+          "t_whisper": 1.257,
+          "t_llm": 5.952,
+          "t_total": 13.137
+        }
+      ]
+    }
+  ]
+}

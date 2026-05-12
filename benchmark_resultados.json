@@ -1,0 +1,821 @@
+[
+  {
+    "whisper": "tiny",
+    "ollama": "llama3.2",
+    "precision": 0.625,
+    "t_whisper_avg": 0.373,
+    "t_llm_avg": 8.662,
+    "t_total_avg": 14.194,
+    "score": 0.4032,
+    "ciclos": [
+      {
+        "esperado": "move_home",
+        "transcrito": "Me ahum.",
+        "detectado": "move_home",
+        "correcto": true,
+        "t_audio": 8.226,
+        "t_whisper": 0.494,
+        "t_llm": 25.697,
+        "t_total": 34.418
+      },
+      {
+        "esperado": "move_joint",
+        "transcrito": "mueve que el gente uno a 45 grados.",
+        "detectado": "move_joint",
+        "correcto": true,
+        "t_audio": 5.971,
+        "t_whisper": 0.339,
+        "t_llm": 6.549,
+        "t_total": 12.861
+      },
+      {
+        "esperado": "move_joint",
+        "transcrito": "mueve el 23 a 90 grados.",
+        "detectado": "move_joint",
+        "correcto": true,
+        "t_audio": 5.536,
+        "t_whisper": 0.32,
+        "t_llm": 6.587,
+        "t_total": 12.443
+      },
+      {
+        "esperado": "open_gripper",
+        "transcrito": "abre el gripper.",
+        "detectado": "open_gripper",
+        "correcto": true,
+        "t_audio": 3.749,
+        "t_whisper": 0.257,
+        "t_llm": 4.695,
+        "t_total": 8.702
+      },
+      {
+        "esperado": "close_gripper",
+        "transcrito": "Cierra el hidriper.",
+        "detectado": "close_gripper",
+        "correcto": true,
+        "t_audio": 4.395,
+        "t_whisper": 0.769,
+        "t_llm": 4.539,
+        "t_total": 9.704
+      },
+      {
+        "esperado": "stop",
+        "transcrito": "¡Vada!",
+        "detectado": "move_home",
+        "correcto": false,
+        "t_audio": 2.981,
+        "t_whisper": 0.208,
+        "t_llm": 5.155,
+        "t_total": 8.346
+      },
+      {
+        "esperado": "move_cartesian",
+        "transcrito": "mueve 30 centímetros en enques",
+        "detectado": "open_gripper",
+        "correcto": false,
+        "t_audio": 5.033,
+        "t_whisper": 0.304,
+        "t_llm": 9.547,
+        "t_total": 14.884
+      },
+      {
+        "esperado": "rotate_joint",
+        "transcrito": "rota el joint dos treinta de dos.",
+        "detectado": "move_joint",
+        "correcto": false,
+        "t_audio": 5.37,
+        "t_whisper": 0.294,
+        "t_llm": 6.531,
+        "t_total": 12.196
+      }
+    ]
+  },
+  {
+    "whisper": "tiny",
+    "ollama": "mistral",
+    "precision": 0.375,
+    "t_whisper_avg": 0.825,
+    "t_llm_avg": 28.694,
+    "t_total_avg": 35.577,
+    "score": 0.2362,
+    "ciclos": [
+      {
+        "esperado": "move_home",
+        "transcrito": "¡Bé, ajo!",
+        "detectado": "move_joint",
+        "correcto": false,
+        "t_audio": 4.009,
+        "t_whisper": 0.672,
+        "t_llm": 89.821,
+        "t_total": 94.503
+      },
+      {
+        "esperado": "move_joint",
+        "transcrito": "mueve el join de 1 a 35 grados",
+        "detectado": "move_joint",
+        "correcto": true,
+        "t_audio": 15.104,
+        "t_whisper": 0.951,
+        "t_llm": 15.356,
+        "t_total": 31.412
+      },
+      {
+        "esperado": "move_joint",
+        "transcrito": "Mueve el drink resto en una venta de grals.",
+        "detectado": "",
+        "correcto": false,
+        "t_audio": 5.032,
+        "t_whisper": 1.692,
+        "t_llm": 39.037,
+        "t_total": 45.763
+      },
+      {
+        "esperado": "open_gripper",
+        "transcrito": "Avere y el gripper.",
+        "detectado": "open_gripper",
+        "correcto": true,
+        "t_audio": 5.542,
+        "t_whisper": 0.782,
+        "t_llm": 13.973,
+        "t_total": 20.298
+      },
+      {
+        "esperado": "close_gripper",
+        "transcrito": "¡Sierra el cliper!",
+        "detectado": "close_gripper",
+        "correcto": true,
+        "t_audio": 4.094,
+        "t_whisper": 0.67,
+        "t_llm": 12.143,
+        "t_total": 16.907
+      },
+      {
+        "esperado": "stop",
+        "transcrito": "Y ahora... ¿Y es buscado en polos?",
+        "detectado": "move_joint",
+        "correcto": false,
+        "t_audio": 4.265,
+        "t_whisper": 0.67,
+        "t_llm": 26.365,
+        "t_total": 31.301
+      },
+      {
+        "esperado": "move_cartesian",
+        "transcrito": "Muy vegetales en diametros en enquis.",
+        "detectado": "",
+        "correcto": false,
+        "t_audio": 4.865,
+        "t_whisper": 0.873,
+        "t_llm": 17.659,
+        "t_total": 23.398
+      },
+      {
+        "esperado": "rotate_joint",
+        "transcrito": "Corta el juvent dos 30 grados.",
+        "detectado": "move_joint",
+        "correcto": false,
+        "t_audio": 5.546,
+        "t_whisper": 0.288,
+        "t_llm": 15.196,
+        "t_total": 21.03
+      }
+    ]
+  },
+  {
+    "whisper": "tiny",
+    "ollama": "phi3",
+    "precision": 0.625,
+    "t_whisper_avg": 0.378,
+    "t_llm_avg": 15.361,
+    "t_total_avg": 21.078,
+    "score": 0.394,
+    "ciclos": [
+      {
+        "esperado": "move_home",
+        "transcrito": "de arroz.",
+        "detectado": "",
+        "correcto": false,
+        "t_audio": 4.007,
+        "t_whisper": 0.308,
+        "t_llm": 47.772,
+        "t_total": 52.088
+      },
+      {
+        "esperado": "move_joint",
+        "transcrito": "mueve el joint uno a 45 grados.",
+        "detectado": "move_joint",
+        "correcto": true,
+        "t_audio": 12.297,
+        "t_whisper": 0.416,
+        "t_llm": 11.376,
+        "t_total": 24.105
+      },
+      {
+        "esperado": "move_joint",
+        "transcrito": "mueve el juin 3 a 90 grados.",
+        "detectado": "move_joint",
+        "correcto": true,
+        "t_audio": 5.035,
+        "t_whisper": 0.302,
+        "t_llm": 11.239,
+        "t_total": 16.58
+      },
+      {
+        "esperado": "open_gripper",
+        "transcrito": "abre el gripejo.",
+        "detectado": "open_gripper",
+        "correcto": true,
+        "t_audio": 3.839,
+        "t_whisper": 0.769,
+        "t_llm": 7.658,
+        "t_total": 12.271
+      },
+      {
+        "esperado": "close_gripper",
+        "transcrito": "Cierra el gripe.",
+        "detectado": "close_gripper",
+        "correcto": true,
+        "t_audio": 3.502,
+        "t_whisper": 0.277,
+        "t_llm": 8.534,
+        "t_total": 12.314
+      },
+      {
+        "esperado": "stop",
+        "transcrito": "¡Para!",
+        "detectado": "stop",
+        "correcto": true,
+        "t_audio": 4.219,
+        "t_whisper": 0.332,
+        "t_llm": 6.851,
+        "t_total": 11.455
+      },
+      {
+        "esperado": "move_cartesian",
+        "transcrito": "9 de 10 centímetros en X.",
+        "detectado": "",
+        "correcto": false,
+        "t_audio": 4.523,
+        "t_whisper": 0.3,
+        "t_llm": 18.397,
+        "t_total": 23.223
+      },
+      {
+        "esperado": "rotate_joint",
+        "transcrito": "rota el gento dos 30 gras.",
+        "detectado": "move_joint",
+        "correcto": false,
+        "t_audio": 5.201,
+        "t_whisper": 0.32,
+        "t_llm": 11.06,
+        "t_total": 16.585
+      }
+    ]
+  },
+  {
+    "whisper": "base",
+    "ollama": "llama3.2",
+    "precision": 0.375,
+    "t_whisper_avg": 0.692,
+    "t_llm_avg": 9.081,
+    "t_total_avg": 17.159,
+    "score": 0.2483,
+    "ciclos": [
+      {
+        "esperado": "move_home",
+        "transcrito": "B. A. H.",
+        "detectado": "",
+        "correcto": false,
+        "t_audio": 14.042,
+        "t_whisper": 1.315,
+        "t_llm": 25.658,
+        "t_total": 41.017
+      },
+      {
+        "esperado": "move_joint",
+        "transcrito": "mueve el joint 1 a 45 grados",
+        "detectado": "move_joint",
+        "correcto": true,
+        "t_audio": 5.863,
+        "t_whisper": 0.53,
+        "t_llm": 6.623,
+        "t_total": 13.057
+      },
+      {
+        "esperado": "move_joint",
+        "transcrito": "mueve el joint 3 a 90 grados.",
+        "detectado": "move_joint",
+        "correcto": true,
+        "t_audio": 8.874,
+        "t_whisper": 0.506,
+        "t_llm": 6.463,
+        "t_total": 15.844
+      },
+      {
+        "esperado": "open_gripper",
+        "transcrito": "el creeper",
+        "detectado": "move_cartesian",
+        "correcto": false,
+        "t_audio": 4.434,
+        "t_whisper": 1.171,
+        "t_llm": 9.442,
+        "t_total": 15.105
+      },
+      {
+        "esperado": "close_gripper",
+        "transcrito": "el gripper.",
+        "detectado": "open_gripper",
+        "correcto": false,
+        "t_audio": 4.692,
+        "t_whisper": 0.488,
+        "t_llm": 4.548,
+        "t_total": 9.731
+      },
+      {
+        "esperado": "stop",
+        "transcrito": "¿Para? No, por lo menos mal, porque hace un box, sí, por ahí.",
+        "detectado": "open_gripper",
+        "correcto": false,
+        "t_audio": 7.852,
+        "t_whisper": 0.596,
+        "t_llm": 4.997,
+        "t_total": 13.447
+      },
+      {
+        "esperado": "move_cartesian",
+        "transcrito": "mueve 10 cm en X",
+        "detectado": "move_cartesian",
+        "correcto": true,
+        "t_audio": 5.97,
+        "t_whisper": 0.465,
+        "t_llm": 8.447,
+        "t_total": 14.885
+      },
+      {
+        "esperado": "rotate_joint",
+        "transcrito": "Rota el jointe dos treinta grados.",
+        "detectado": "move_joint",
+        "correcto": false,
+        "t_audio": 7.248,
+        "t_whisper": 0.461,
+        "t_llm": 6.474,
+        "t_total": 14.184
+      }
+    ]
+  },
+  {
+    "whisper": "base",
+    "ollama": "mistral",
+    "precision": 0.625,
+    "t_whisper_avg": 1.431,
+    "t_llm_avg": 26.37,
+    "t_total_avg": 34.652,
+    "score": 0.3865,
+    "ciclos": [
+      {
+        "esperado": "move_home",
+        "transcrito": "B a Home.",
+        "detectado": "move_joint",
+        "correcto": false,
+        "t_audio": 3.798,
+        "t_whisper": 1.23,
+        "t_llm": 88.384,
+        "t_total": 93.427
+      },
+      {
+        "esperado": "move_joint",
+        "transcrito": "Vuelve el joint 1 a 45°.",
+        "detectado": "move_joint",
+        "correcto": true,
+        "t_audio": 12.523,
+        "t_whisper": 0.818,
+        "t_llm": 15.943,
+        "t_total": 29.286
+      },
+      {
+        "esperado": "move_joint",
+        "transcrito": "mueve el 23 a 90 grados.",
+        "detectado": "move_joint",
+        "correcto": true,
+        "t_audio": 5.29,
+        "t_whisper": 0.532,
+        "t_llm": 15.29,
+        "t_total": 21.115
+      },
+      {
+        "esperado": "open_gripper",
+        "transcrito": "abrir el gripe.",
+        "detectado": "open_gripper",
+        "correcto": true,
+        "t_audio": 5.925,
+        "t_whisper": 0.479,
+        "t_llm": 10.694,
+        "t_total": 17.153
+      },
+      {
+        "esperado": "close_gripper",
+        "transcrito": "y cerra el gripe.",
+        "detectado": "close_gripper",
+        "correcto": true,
+        "t_audio": 4.007,
+        "t_whisper": 0.451,
+        "t_llm": 11.168,
+        "t_total": 15.681
+      },
+      {
+        "esperado": "stop",
+        "transcrito": "para.",
+        "detectado": "move_joint",
+        "correcto": false,
+        "t_audio": 3.151,
+        "t_whisper": 1.201,
+        "t_llm": 33.152,
+        "t_total": 37.507
+      },
+      {
+        "esperado": "move_cartesian",
+        "transcrito": "10 cm en X.",
+        "detectado": "move_cartesian",
+        "correcto": true,
+        "t_audio": 4.863,
+        "t_whisper": 1.266,
+        "t_llm": 15.356,
+        "t_total": 21.49
+      },
+      {
+        "esperado": "rotate_joint",
+        "transcrito": "Rota el G202.30°. Y una vez, el reacciono a más clípan. La descargada no tiene un vuelta, ahora que es el segundo. Si la concesión de un nuevo fino, para la matrín morda, el es más clípan, si dirá, usan el método TFT.",
+        "detectado": "move_joint",
+        "correcto": false,
+        "t_audio": 15.108,
+        "t_whisper": 5.471,
+        "t_llm": 20.974,
+        "t_total": 41.554
+      }
+    ]
+  },
+  {
+    "whisper": "base",
+    "ollama": "phi3",
+    "precision": 0.375,
+    "t_whisper_avg": 0.682,
+    "t_llm_avg": 14.095,
+    "t_total_avg": 19.537,
+    "score": 0.2455,
+    "ciclos": [
+      {
+        "esperado": "move_home",
+        "transcrito": "¡Bé a rom!",
+        "detectado": "open_gripper",
+        "correcto": false,
+        "t_audio": 3.799,
+        "t_whisper": 1.25,
+        "t_llm": 38.339,
+        "t_total": 43.39
+      },
+      {
+        "esperado": "move_joint",
+        "transcrito": "mueve el joint 1 o 45 grados",
+        "detectado": "move_joint",
+        "correcto": true,
+        "t_audio": 5.006,
+        "t_whisper": 0.563,
+        "t_llm": 10.704,
+        "t_total": 16.275
+      },
+      {
+        "esperado": "move_joint",
+        "transcrito": "Un mueve el joint 3 a 90 grados.",
+        "detectado": "move_joint",
+        "correcto": true,
+        "t_audio": 4.434,
+        "t_whisper": 0.525,
+        "t_llm": 11.378,
+        "t_total": 16.34
+      },
+      {
+        "esperado": "open_gripper",
+        "transcrito": "Abre el gripe.",
+        "detectado": "stop",
+        "correcto": false,
+        "t_audio": 7.08,
+        "t_whisper": 0.444,
+        "t_llm": 10.989,
+        "t_total": 18.516
+      },
+      {
+        "esperado": "close_gripper",
+        "transcrito": "Serra el gripe.",
+        "detectado": "stop",
+        "correcto": false,
+        "t_audio": 3.835,
+        "t_whisper": 0.457,
+        "t_llm": 7.087,
+        "t_total": 11.42
+      },
+      {
+        "esperado": "stop",
+        "transcrito": "Para.",
+        "detectado": "",
+        "correcto": false,
+        "t_audio": 3.668,
+        "t_whisper": 0.342,
+        "t_llm": 7.483,
+        "t_total": 11.494
+      },
+      {
+        "esperado": "move_cartesian",
+        "transcrito": "9 de 10 centímetros en X.",
+        "detectado": "move_cartesian",
+        "correcto": true,
+        "t_audio": 5.118,
+        "t_whisper": 0.424,
+        "t_llm": 14.011,
+        "t_total": 19.606
+      },
+      {
+        "esperado": "rotate_joint",
+        "transcrito": "Prota el joint 2.30 grados.",
+        "detectado": "",
+        "correcto": false,
+        "t_audio": 5.032,
+        "t_whisper": 1.451,
+        "t_llm": 12.768,
+        "t_total": 19.253
+      }
+    ]
+  },
+  {
+    "whisper": "small",
+    "ollama": "llama3.2",
+    "precision": 0.75,
+    "t_whisper_avg": 2.164,
+    "t_llm_avg": 8.309,
+    "t_total_avg": 16.83,
+    "score": 0.4738,
+    "ciclos": [
+      {
+        "esperado": "move_home",
+        "transcrito": "Be Ahol",
+        "detectado": "move_home",
+        "correcto": true,
+        "t_audio": 4.307,
+        "t_whisper": 4.243,
+        "t_llm": 26.426,
+        "t_total": 34.978
+      },
+      {
+        "esperado": "move_joint",
+        "transcrito": "mueve el joint 1 a 45 grados",
+        "detectado": "move_joint",
+        "correcto": true,
+        "t_audio": 5.293,
+        "t_whisper": 1.313,
+        "t_llm": 6.603,
+        "t_total": 13.21
+      },
+      {
+        "esperado": "move_joint",
+        "transcrito": "9 el joint 3 a 90 grados",
+        "detectado": "move_joint",
+        "correcto": true,
+        "t_audio": 5.459,
+        "t_whisper": 1.289,
+        "t_llm": 6.565,
+        "t_total": 13.313
+      },
+      {
+        "esperado": "open_gripper",
+        "transcrito": "a ver el griper",
+        "detectado": "open_gripper",
+        "correcto": true,
+        "t_audio": 15.097,
+        "t_whisper": 1.285,
+        "t_llm": 4.548,
+        "t_total": 20.931
+      },
+      {
+        "esperado": "close_gripper",
+        "transcrito": "Cierra el griper",
+        "detectado": "close_gripper",
+        "correcto": true,
+        "t_audio": 4.011,
+        "t_whisper": 1.331,
+        "t_llm": 4.53,
+        "t_total": 9.873
+      },
+      {
+        "esperado": "stop",
+        "transcrito": "¡Para!",
+        "detectado": "move_home",
+        "correcto": false,
+        "t_audio": 7.336,
+        "t_whisper": 2.557,
+        "t_llm": 5.113,
+        "t_total": 15.008
+      },
+      {
+        "esperado": "move_cartesian",
+        "transcrito": "de 10 centímetros en X",
+        "detectado": "move_cartesian",
+        "correcto": true,
+        "t_audio": 4.516,
+        "t_whisper": 1.221,
+        "t_llm": 6.391,
+        "t_total": 12.128
+      },
+      {
+        "esperado": "rotate_joint",
+        "transcrito": "Brota el jet 230 grados",
+        "detectado": "move_joint",
+        "correcto": false,
+        "t_audio": 4.778,
+        "t_whisper": 4.074,
+        "t_llm": 6.292,
+        "t_total": 15.198
+      }
+    ]
+  },
+  {
+    "whisper": "small",
+    "ollama": "mistral",
+    "precision": 0.625,
+    "t_whisper_avg": 1.809,
+    "t_llm_avg": 26.455,
+    "t_total_avg": 32.707,
+    "score": 0.3872,
+    "ciclos": [
+      {
+        "esperado": "move_home",
+        "transcrito": "a la próxima.",
+        "detectado": "move_joint",
+        "correcto": false,
+        "t_audio": 3.495,
+        "t_whisper": 6.046,
+        "t_llm": 96.712,
+        "t_total": 106.258
+      },
+      {
+        "esperado": "move_joint",
+        "transcrito": "el joint 1 a 45 grados",
+        "detectado": "move_joint",
+        "correcto": true,
+        "t_audio": 5.294,
+        "t_whisper": 1.196,
+        "t_llm": 14.824,
+        "t_total": 21.314
+      },
+      {
+        "esperado": "move_joint",
+        "transcrito": "mueve el joint 3 a 90 grados",
+        "detectado": "move_joint",
+        "correcto": true,
+        "t_audio": 5.84,
+        "t_whisper": 1.22,
+        "t_llm": 14.847,
+        "t_total": 21.908
+      },
+      {
+        "esperado": "open_gripper",
+        "transcrito": "abre el gripe.",
+        "detectado": "open_gripper",
+        "correcto": true,
+        "t_audio": 4.006,
+        "t_whisper": 1.157,
+        "t_llm": 10.387,
+        "t_total": 15.551
+      },
+      {
+        "esperado": "close_gripper",
+        "transcrito": "Cierra el griper",
+        "detectado": "close_gripper",
+        "correcto": true,
+        "t_audio": 4.095,
+        "t_whisper": 1.166,
+        "t_llm": 10.369,
+        "t_total": 15.631
+      },
+      {
+        "esperado": "stop",
+        "transcrito": "¡Adiós!",
+        "detectado": "move_joint",
+        "correcto": false,
+        "t_audio": 3.157,
+        "t_whisper": 1.135,
+        "t_llm": 35.12,
+        "t_total": 39.413
+      },
+      {
+        "esperado": "move_cartesian",
+        "transcrito": "Muévete 10 centímetros en X",
+        "detectado": "move_cartesian",
+        "correcto": true,
+        "t_audio": 4.521,
+        "t_whisper": 1.246,
+        "t_llm": 14.308,
+        "t_total": 20.076
+      },
+      {
+        "esperado": "rotate_joint",
+        "transcrito": "rota el joint 230 grados.",
+        "detectado": "move_joint",
+        "correcto": false,
+        "t_audio": 5.12,
+        "t_whisper": 1.309,
+        "t_llm": 15.072,
+        "t_total": 21.502
+      }
+    ]
+  },
+  {
+    "whisper": "small",
+    "ollama": "phi3",
+    "precision": 0.5,
+    "t_whisper_avg": 1.1,
+    "t_llm_avg": 12.336,
+    "t_total_avg": 18.241,
+    "score": 0.3219,
+    "ciclos": [
+      {
+        "esperado": "move_home",
+        "transcrito": "y nos vemos en el próximo vídeo, ¡hasta la próxima!",
+        "detectado": "stop",
+        "correcto": false,
+        "t_audio": 3.586,
+        "t_whisper": 1.429,
+        "t_llm": 37.909,
+        "t_total": 42.925
+      },
+      {
+        "esperado": "move_joint",
+        "transcrito": "mueve el joint 1 a 45 grados.",
+        "detectado": "move_joint",
+        "correcto": true,
+        "t_audio": 5.546,
+        "t_whisper": 1.317,
+        "t_llm": 11.247,
+        "t_total": 18.112
+      },
+      {
+        "esperado": "move_joint",
+        "transcrito": "mueve el joint 3 a 90 grados",
+        "detectado": "move_joint",
+        "correcto": true,
+        "t_audio": 10.498,
+        "t_whisper": 1.283,
+        "t_llm": 10.997,
+        "t_total": 22.78
+      },
+      {
+        "esperado": "open_gripper",
+        "transcrito": "Abre el griper.",
+        "detectado": "open_gripper",
+        "correcto": true,
+        "t_audio": 3.926,
+        "t_whisper": 1.183,
+        "t_llm": 7.993,
+        "t_total": 13.104
+      },
+      {
+        "esperado": "close_gripper",
+        "transcrito": "tierra el griper.",
+        "detectado": "open_gripper",
+        "correcto": false,
+        "t_audio": 4.262,
+        "t_whisper": 1.208,
+        "t_llm": 8.36,
+        "t_total": 13.831
+      },
+      {
+        "esperado": "stop",
+        "transcrito": "",
+        "detectado": "",
+        "correcto": false,
+        "t_audio": 15.101,
+        "t_whisper": 0.0,
+        "t_llm": 0.0,
+        "t_total": 0.0
+      },
+      {
+        "esperado": "move_cartesian",
+        "transcrito": "de 10 centímetros en X",
+        "detectado": "move_cartesian",
+        "correcto": true,
+        "t_audio": 5.291,
+        "t_whisper": 1.213,
+        "t_llm": 11.081,
+        "t_total": 17.626
+      },
+      {
+        "esperado": "rotate_joint",
+        "transcrito": "brota el joint 2 30 grados",
+        "detectado": "move_joint",
+        "correcto": false,
+        "t_audio": 5.289,
+        "t_whisper": 1.164,
+        "t_llm": 11.098,
+        "t_total": 17.554
+      }
+    ]
+  }
+]
