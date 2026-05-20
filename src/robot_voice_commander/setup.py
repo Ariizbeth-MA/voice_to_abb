@@ -26,8 +26,9 @@ setup(
         'console_scripts': [
             'voice_commander = robot_voice_commander.voice_commander_node:main',
             'moveit_executor = robot_voice_commander.moveit_executor_node:main',
-            'benchmark = robot_voice_commander.benchmarck:main',
-            'benchmarcj_cpp = robot_voice_commander.benchmarck_cpp:main',
+            'benchmark = robot_voice_commander.benchmark:main',
+            'benchmark_cpp = robot_voice_commander.benchmark_cpp:main',
+            'enroll_speaker = robot_voice_commander.modules.speaker.enroll:main',
         ],
     },
 )
