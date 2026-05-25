@@ -28,7 +28,7 @@ setup(
             'moveit_executor = robot_voice_commander.moveit_executor_node:main',
             'benchmark = robot_voice_commander.benchmark:main',
             'benchmark_cpp = robot_voice_commander.benchmark_cpp:main',
-            'enroll_speaker = robot_voice_commander.modules.speaker.enroll:main',
+            'verify_password = robot_voice_commander.modules.speaker.verify:main',
         ],
     },
 )

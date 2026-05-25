@@ -9,11 +9,7 @@ audio:
 
 speaker_verification:
   enabled: true
-  max_speakers: 2
-  speakers_dir: "authorized_speakers"
-  threshold: 0.75
-  sample_rate: 16000
-  num_bands: 32
+  password: "arroz"             # Simple password for speaker verification (for demo purposes)
 
 whisper:
   model_size: "base"           # tiny | base | small | medium | large-v3

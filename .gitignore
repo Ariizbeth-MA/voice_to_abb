@@ -16,3 +16,6 @@ models/
 
 # Logs
 *.log
+
+# Voces autorizadas 
+authorized_speakers/
